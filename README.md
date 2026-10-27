@@ -6,6 +6,29 @@ The skill guides an agent through design decisions, component discovery, source 
 
 This repository contains instructions and reference material, not a React application or a bundled component library. It is an independent community project, unaffiliated with React Bits or OpenAI.
 
+## Quick install
+
+Run this in your React project, then select your coding agent when prompted:
+
+```bash
+npx skills add N-Aymane/reactbits-design --skill reactbits-design
+```
+
+Requires Node.js 22.20+ and Git. To install for all your projects, add `-g`. The [Skills CLI](https://github.com/vercel-labs/skills) handles discovery and installation; no separate npm package for this repository is needed.
+
+### Let your agent install it
+
+Copy this into Claude Code, Codex, OpenCode, or your coding agent:
+
+```text
+Install the React Bits Design skill from https://github.com/N-Aymane/reactbits-design.
+Read https://raw.githubusercontent.com/N-Aymane/reactbits-design/main/INSTALL.md
+and follow its instructions for this agent. Install for the current project only,
+then verify that SKILL.md and its references are present and explain how to use it.
+```
+
+See [INSTALL.md](INSTALL.md) for commands targeting specific agents, personal installation, manual fallback, verification, and updates.
+
 ## Contents
 
 - [What it does](#what-it-does)
@@ -38,6 +61,8 @@ To use the skill, you need an agent that supports local skills or can explicitly
 The skill files themselves require no package installation, API key, paid React Bits assets, or MCP server. When implementing an interface, the agent needs the project's normal development tools and any dependencies required by the selected components. Browser access is needed to substantiate visual and interaction checks.
 
 ## Installation
+
+Use the [quick install](#quick-install) above for the simplest setup. The following manual method also works without the Skills CLI.
 
 Download or clone this repository, then copy the **entire `reactbits-design` folder**, including references, into one location supported by your host.
 
@@ -126,6 +151,7 @@ If official source and local source are both unavailable, the instructions requi
 .
 ├── README.md
 ├── LICENSE
+├── INSTALL.md
 └── reactbits-design/
     ├── SKILL.md
     ├── agents/
@@ -199,7 +225,7 @@ Publish this repository root so GitHub displays this README and users can find t
 
 ```bash
 git init
-git add README.md LICENSE reactbits-design
+git add README.md INSTALL.md LICENSE reactbits-design
 git commit -m "Add React Bits design skill and documentation"
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/reactbits-design.git
