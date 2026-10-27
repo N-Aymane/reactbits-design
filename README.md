@@ -163,7 +163,7 @@ python "$HOME\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\r
 ```
 
 ```bash
-python3 "$HOME/.agents/skills/.system/skill-creator/scripts/quick_validate.py" ./reactbits-design
+python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" ./reactbits-design
 ```
 
 The validator requires PyYAML in the Python environment running it. The tooling is supplied by Codex and is not bundled here; adjust the path if necessary. Structural validation does not prove good design decisions.
@@ -206,7 +206,7 @@ git remote add origin https://github.com/YOUR-USERNAME/reactbits-design.git
 git push -u origin main
 ```
 
-Replace `YOUR-USERNAME` and the repository name with your actual values. If Git is already initialized or a remote exists, use the existing configuration instead of repeating those setup steps. Publishing requires your GitHub authentication. These commands are instructions; this project has not been published by this documentation task.
+Replace `YOUR-USERNAME` and the repository name with your actual values. If Git is already initialized or a remote exists, use the existing configuration instead of repeating those setup steps. Publishing requires your GitHub authentication. The upstream repository is [N-Aymane/reactbits-design](https://github.com/N-Aymane/reactbits-design). The commands above describe publishing your own copy.
 
 ## License and credits
 
