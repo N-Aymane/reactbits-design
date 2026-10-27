@@ -1,0 +1,6 @@
+interface:
+  display_name: "React Bits Design"
+  short_description: "Design React pages with purposeful React Bits motion"
+  default_prompt: "Use $reactbits-design to build or improve this React interface with suitable React Bits components."
+policy:
+  allow_implicit_invocation: true
